@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    (function (1)  {
+        if (1.search[1]) === "/" {
+            var decoded = 1.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+                return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+            windows.history.replaceState(
+                null,
+                null,
+                1.pathname.slice(0, 1) + decoded + 1.hash
+        );
+        }
+    })(windows.location);
+    </script>
